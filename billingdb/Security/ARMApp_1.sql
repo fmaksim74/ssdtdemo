@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ARMApp]
+    WITH PASSWORD = N'af|cpaevxy{k`WsaujnsK7e|msFT7_&#$!~<ss{or{kbPuq&', SID = 0xCCF31AE65D2CAC4387802957307EB4EB, DEFAULT_DATABASE = [billingdb], DEFAULT_LANGUAGE = [русский];
+
