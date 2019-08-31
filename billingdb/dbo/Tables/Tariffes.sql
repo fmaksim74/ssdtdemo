@@ -13,4 +13,3 @@
     CONSTRAINT [CHK_Tariffes_SMSCost_Positive] CHECK ([SMSCost]>=(0)),
     CONSTRAINT [UN_Tariffes_Name] UNIQUE NONCLUSTERED ([Name] ASC)
 );
-
