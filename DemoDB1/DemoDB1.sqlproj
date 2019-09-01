@@ -13,7 +13,7 @@
     </RootPath>
     <RootNamespace>DemoDB1</RootNamespace>
     <AssemblyName>DemoDB1</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>1049,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -22,6 +22,10 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Cyrillic_General_CI_AS</DefaultCollation>
+    <QueryStoreDesiredState>ReadWrite</QueryStoreDesiredState>
+    <IsChangeTrackingOn>True</IsChangeTrackingOn>
+    <CompatibilityMode>120</CompatibilityMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -71,5 +75,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="publish\DemoDB1toSQLExtlocalDev.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
