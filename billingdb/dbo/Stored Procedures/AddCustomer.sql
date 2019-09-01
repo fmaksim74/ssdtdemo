@@ -3,8 +3,9 @@
 	@customer_id BIGINT = 0 OUTPUT
 AS
 BEGIN
-
+  /* Процедура добавления нового клиента */
 	SET NOCOUNT ON;
+  
   DECLARE @proc_name NVARCHAR(128) = 'BillingDB.AddCustomer ', @msg NVARCHAR(128);
 
 	DECLARE @inserted table ([ID] BIGINT);

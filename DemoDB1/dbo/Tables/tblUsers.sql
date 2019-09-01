@@ -4,7 +4,8 @@
   [Login] NVARCHAR(64) NOT NULL CONSTRAINT UC_tblUsers_Login UNIQUE, 
   [CreataDate] DATETIME NOT NULL CONSTRAINT DF_tblUsers_CreateDate DEFAULT CURRENT_TIMESTAMP, 
 	[State] TINYINT NOT NULL CONSTRAINT DF_tblUsers_State DEFAULT 0, 
-  [ApplicationConfig] NTEXT NULL
+  [ApplicationConfig] NTEXT NULL,
+  [Note] NTEXT NULL
 )
 
 GO
